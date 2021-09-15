@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Button Component renders button component 1`] = `"<button style=\\"width: 60px; height: 56px; cursor: pointer; border-width: 0px 0px 0px 1px; border-style: solid;\\">hello</button>"`;
+
+exports[`Test Button Component renders default button component 1`] = `"<button style=\\"width: 60px; height: 100%; cursor: pointer; border-width: 1px; border-style: solid;\\"></button>"`;
+
+exports[`Test Button Component renders disabled button component 1`] = `"<button style=\\"width: 60px; height: 56px; cursor: auto; border-width: 0px 0px 0px 1px; border-style: solid;\\" disabled=\\"\\">world</button>"`;

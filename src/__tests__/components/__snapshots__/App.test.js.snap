@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+"<div class=\\"App\\">
+  <div class=\\"wrapper\\">
+    <div class=\\"counter\\"><button style=\\"width: 60px; height: 56px; cursor: pointer; border-width: 0px 1px 0px 0px; border-style: solid;\\">-</button><input type=\\"number\\" class=\\"count-input\\" aria-label=\\"Count\\" max=\\"1000\\" value=\\"1\\"><button style=\\"width: 60px; height: 56px; cursor: pointer; border-width: 0px 0px 0px 1px; border-style: solid;\\">+</button></div>
+  </div>
+</div>"
+`;
