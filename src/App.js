@@ -6,7 +6,7 @@ import useCounter from "./hooks/useCounter";
 
 import "./App.css";
 
-const BASE_URL = "https://interview-8e4c5-default-rtdb.firebaseio.com";
+const BASE_URL = "https://interview-1bff4-default-rtdb.firebaseio.com";
 
 const PUT_URL = BASE_URL + "/front-end.json";
 const GET_URL = BASE_URL + "/front-end/quickSellCounter.json";
@@ -21,7 +21,7 @@ const apiCall = async (url = "", method = "GET", body) => {
   };
 
   try {
-    const res = await fetch(url, options).then(res => res.json());
+    const res = await fetch(url, options).then((res) => res.json());
     return res;
   } catch (e) {
     throw e;
@@ -53,11 +53,11 @@ function App({ initialValue = 1, max = 1000 }) {
 
   const handleIncrement = () => dispatchCounter({ type: "increment" });
   const handleDecrement = () => dispatchCounter({ type: "decrement" });
-  const onChange = e =>
+  const onChange = (e) =>
     dispatchCounter({ type: "absolute", value: e.target.value });
 
   const insertCounterDebounced = useRef(
-    debounce(async count => {
+    debounce(async (count) => {
       try {
         setIsSaving(true);
         await apiCall(PUT_URL, "PUT", { quickSellCounter: count });
